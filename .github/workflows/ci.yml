@@ -36,7 +36,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
     -
       name: Build Docker image
-      run: docker buildx build -f /ci/dockerfile --tag harinezumi0701/hari_doc:v1 
+      run: docker buildx build -f ci/dockerfile --tag harinezumi0701/hari_doc:v1 
     -
       name: Push Docker image
       run: docker push harinezumi0701/hari_doc:v1
